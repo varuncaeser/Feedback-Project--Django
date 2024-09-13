@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Feedback form
+        </title>
+    </head>
+    <body><center>
+        <div class="container">
+            <h1> Student Feedback Form</h1>
+            <form method="POST">
+                {{form.as_p}}
+                {%csrf_token%}
+                <br>
+                <input type="submit" class="btn btn-primary" value="submit">
+            </form>
+
+        </div>
+    </center>
+        
+    </body>
+</html>
